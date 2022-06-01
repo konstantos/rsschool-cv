@@ -14,3 +14,17 @@
 - I want to learn JavaScript, html, css, C#, C++.
 - I have basic skills and experience (internship) on Unity 3D, C#
 
+### Skills:
+
+- HTML, CSS, JavaScript, C#, Unity 3D & 2D.
+
+### Code example:
+
+```
+    alert(`Hello, RS School`);
+```
+
+### Portfolio:
+
+- This is my learning project: [Space](https://konstantos.ru/space/ 'Space')
+
