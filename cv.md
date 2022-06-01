@@ -28,3 +28,24 @@
 
 - This is my learning project: [Space](https://konstantos.ru/space/ 'Space')
 
+### Work experience:
+
+I have no work experience yet, but I trained at the age of 14
+
+#### Education: 
+
+#### _Foxford Secondary School Grade 9_
+#### _Courses GeekBrains C# GameDev Unity, 2019-2020_
+
+- Certificates:
+  - [GeekBrains Unity. Level 2](https://gb.ru/certificates/659454.en 'Certificate GeekBrains Unity. Level 2')
+  - [GeekBrains C# Level 2](https://gb.ru/certificates/663086.en 'Certificate GeekBrains C# Level 2')
+  - [GeekBrains «Web development intensive»](https://gb.ru/certificates/855149.en 'Certificate GeekBrains «Web development intensive»')
+
+
+#### English:
+
+A2 (school level)
+
+---
+© [konstantos](https://github.com/konstantos)
