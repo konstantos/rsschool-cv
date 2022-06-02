@@ -1,0 +1,86 @@
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 1472px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+    border-style: none;
+    transform: translate3d(0px, 0px, .001px);
+}
+
+.unselectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently  not supported by any browser */
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.image {
+    image-rendering: crisp-edges; /*afari*/
+    image-rendering: -moz-crisp-edges; /*fire fox*/
+    image-rendering: -webkit-optimize-contrast;  /*chrom*/
+    -ms-interpolation-mode: nearest-neighbor; /*IE*/
+    /*&__fit {
+        height: 100%;
+        width: 100%;
+    }
+    &__fit_contain {
+        object-fit: contain;
+    }
+    &__fit_cover {
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__fit_fill {
+        object-fit: fill;
+    }
+    &__wrapper{
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }*/
+}
+
+::-webkit-scrollbar {
+    background-color: #1f1f1f;
+    height: 4px;
+    width: 4px;
+    border-radius: 5px;
+    /* @include to-desktop {
+        height: 10px;
+        width: 10px;
+        border-radius: 10px;
+    } */
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #ffffff;
+    /* @include to-desktop {
+        border-radius: 10px;
+    } */
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    /* @include to-desktop {
+        border-radius: 10px;
+    } */
+}
