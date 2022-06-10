@@ -5,32 +5,32 @@
     "short_name": "CV",
     "icons": [
         {
-            "src": "/favicons/android-chrome-32x32.png",
+            "src": "favicons/android-chrome-32x32.png",
             "sizes": "32x32",
             "type": "image/png"
         },
         {
-            "src": "/favicons/android-chrome-57x57.png",
+            "src": "favicons/android-chrome-57x57.png",
             "sizes": "57x57",
             "type": "image/png"
         },
         {
-            "src": "/favicons/android-chrome-72x72.png",
+            "src": "favicons/android-chrome-72x72.png",
             "sizes": "72x72",
             "type": "image/png"
         },
         {
-            "src": "/favicons/android-chrome-114x114.png",
+            "src": "favicons/android-chrome-114x114.png",
             "sizes": "114x114",
             "type": "image/png"
         },
         {
-            "src": "/favicons/android-chrome-144x144.png",
+            "src": "favicons/android-chrome-144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         },
         {
-            "src": "/favicons/android-chrome-256x256.png",
+            "src": "favicons/android-chrome-256x256.png",
             "sizes": "144x144",
             "type": "image/png"
         }
