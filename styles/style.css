@@ -1,4 +1,11 @@
-h1 {
-    color: green;
-    text-decoration: underline;
+body {
+  color: #ffffff;
+}
+.title {
+  font-weight: 600;
+}
+.title-section {
+  font-size: 56px;
+  line-height: 85px;
+  letter-spacing: 0.05em;
 }
