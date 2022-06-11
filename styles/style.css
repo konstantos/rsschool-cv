@@ -1,11 +1,110 @@
-body {
-  color: #ffffff;
-}
+/* ----  titles  ---- */
 .title {
   font-weight: 600;
 }
+
 .title-section {
   font-size: 56px;
   line-height: 85px;
   letter-spacing: 0.05em;
 }
+/* ----  end titles  ---- */
+/* ----  header  ---- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #1f1f1f;
+  box-shadow: 2px 3px 12px 1px rgba(0, 0, 0, 0.5);
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.header__logo-link {
+  display: block;
+  font-family: "Alex Brush", sans-serifs;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-item {
+  margin-right: 50px;
+}
+
+.header__nav-item:last-child {
+  margin-right: 0;
+}
+
+/* ----  end header  ---- */
+/* ----  hero  ---- */
+.hero {
+  padding-top: 130px;
+}
+
+.hero__wrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.hero__left,
+.hero__right {
+  width: 50%;
+}
+
+.hero__right {
+  height: 600px;
+  padding-right: 40px;
+}
+
+.hero__img {
+  height: 100%;
+}
+
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 70px;
+}
+
+.hero__text {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 38px;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+}
+
+.title__hero {
+  font-weight: 600;
+  font-size: 67px;
+  line-height: 100px;
+}
+
+.hero__subtitle {
+  margin-bottom: 35px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+
+.hero__subtitle span {
+  white-space: nowrap;
+}
+/* ----  end hero  ---- */
+

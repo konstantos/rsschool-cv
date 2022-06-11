@@ -65,25 +65,72 @@
 </head>
   <body>
     <header class="header">
-
+      <div class="container">
+        <div class="header__wrap">
+          <div class="header__left">
+            <div class="header__logo"><a href="#hero" class="header__logo-link">Konstantin Basaluk</a></div>
+          </div>
+          <div class="header__right">
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#hero" class="header__nav-link">Home</a></li>
+                <li class="header__nav-item"><a href="#about" class="header__nav-link">About</a></li>
+                <li class="header__nav-item"><a href="#skills" class="header__nav-link">Skills</a></li>
+                <li class="header__nav-item"><a href="#knowledge" class="header__nav-link">Knowledge</a></li>
+                <li class="header__nav-item"><a href="#portfolio" class="header__nav-link">Portfolio</a></li>
+                <li class="header__nav-item"><a href="#contacts" class="header__nav-link">Contacts</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
     </header>
     <main class="main">
-      <section class="section hero">
+      <section class="section hero" id="hero">
         <div class="container">
-          <h2 class="title title-section title__skills">I’m Konstantin Basalyuk</h2>
+          <div class="hero__wrap">
+            <div class="hero__left">     
+              <p class="hero__text">Welcome</p>
+              <h2 class="title title-section title__hero">I’m Konstantin Basalyuk</h2>
+              <p class="hero__subtitle">
+                <span>Web developer, </span>
+                <span>game developer</span>
+              </p>
+              <button class="btn btn-default" type="button">
+                <span class="btn__txt">Download CV</span>
+              </button>
+            </div>
+            <div class="hero__right">
+              <div class="image hero__img">
+                <div class="image__wrapper">
+                  <picture>
+                    <!-- <source srcset=".webp" media="(max-width: 420px)" type="image/webp">
+                    <source srcset=".webp" type="image/webp">
+                    <source srcset=".jpeg" media="(max-width: 420px)"> -->
+                    <img class="image__fit image__fit_cover"
+                      src="images/img/my-gif.gif" 
+                      alt="Wow"
+                      width="566"
+                      height="800"
+                      loading="lazy">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="section about">
+      <section class="section about" id="about">
         <div class="container">
           <h2 class="title title-section title__skills">About</h2>
         </div>
       </section>
-      <section class="section skills">
+      <section class="section skills" id="skills">
         <div class="container">
           <h2 class="title title-section title__skills">My Skills</h2>
         </div>
       </section>
-      <section class="section knowledge">
+      <section class="section knowledge" id="knowledge">
         <div class="container">
           <h2 class="title title-section title__skills">Knowledge</h2>
         </div>
@@ -111,18 +158,16 @@
           </pre>
         </div>
       </section>
-      <section class="section portfolio">
+      <section class="section portfolio" id="portfolio">
         <div class="container">
           <h2 class="title title-section title__skills">My Work Experiance</h2>
         </div>
       </section>
-      <section class="section contacts">
+      <section class="section contacts" id="contacts">
         <div class="container">
           <h2 class="title title-section title__skills">Contacts</h2>
         </div>
       </section>
-      
-    
     </main>
     <footer class="footer">
       <div class="container">
@@ -130,7 +175,6 @@
       </div>
     </footer>
 
-    
     <script></script>
   </body>
 </html>
