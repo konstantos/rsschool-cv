@@ -92,7 +92,7 @@
         <div class="hero__wrap">
           <div class="hero__left">     
             <p class="hero__text">Welcome</p>
-            <h2 class="title title-section title__hero">I’m Konstantin Basalyuk</h2>
+            <h1 class="title title-section title__hero">I’m Konstantin Basalyuk</h1>
             <p class="hero__subtitle">
               <span>Web developer, </span>
               <span>game developer</span>
@@ -158,15 +158,65 @@
     </section>
     <section class="section education" id="education">
       <div class="container">
-        <h2 class="title title-section title__skills">Education</h2>
+        <div class="education__wrap">
+          <div class="education__left">
+            <h3 class="title title-h3 education__title">Language</h3>
+            <div class="education__title-line"></div>
+            <div class="skill-level">
+              <div class="title skill-level__title">Russian</div>
+              <div class="skill-level__line-rus">
+                <div class="skill-level__count">fluent</div>
+                <div class="skill-level__line"></div>
+              </div>
+            </div>
+            <div class="skill-level">
+              <div class="title skill-level__title">English</div>
+              <div class="skill-level__line-eng">
+                <div class="skill-level__count">A2</div>
+                <div class="skill-level__line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="education__right">
+            <h3 class="title title-h3 education__title">Studies</h3>
+            <div class="education__title-line"></div>
+            <div class="skill-level skill-level__stud">
+              <div class="skill-level__icon"></div>
+              <div class="skill-level__contain">
+                <div class="title skill-level__title">FOXFORD High School, Moscow</div>
+                <div class="skill-level__year">2022</div>
+              </div>
+            </div>
+            <div class="skill-level skill-level__stud">
+              <div class="skill-level__icon"></div>
+              <div class="skill-level__contain">
+                <div class="title skill-level__title">Unity 3D course Geek Brains</div>
+                <div class="skill-level__year">2019 <span><a href="https://gb.ru/certificates/659454.en" target="_blank">Sertificate</a></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="section code">
       <div class="container">
-        <h2 class="title title-section title__skills">Code Example</h2>
-        <pre class="code">
+        <h2 class="title title-section title__code">Code Example</h2>
+        <pre class="code__pre">
           <code class="js">
-            
+            function combine() {
+              var objR = JSON.parse(JSON.stringify(arguments[0]))
+              for (var i = 1; i &lt; arguments.length; i++) {        
+                  for (var key in arguments[i]) {
+                      if (typeof objR[key] !== "undefined") {
+                      objR[key] = objR[key] + arguments[i][key];
+                      } else {
+                      objR[key] = arguments[i][key];
+                      }
+                  }
+              }
+              console.log('fuck, i don't know what i'm doing!!!');
+              return objR;
+            } 
           </code>
         </pre>
       </div>
@@ -219,7 +269,21 @@
     </section>
     <section class="section contacts" id="contacts">
       <div class="container">
-        <h2 class="title title-section title__skills">Contacts</h2>
+        <h2 class="title title-section title__contacts">Contacts</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            location:<br><a href="https://goo.gl/maps/LmrT5SDqd79UHidG6" target="_blank" title="location">Krasnodar, Russia</a>
+          </li>
+          <li class="contacts__item">
+            email:<br><a href="mailto:normann23@mail.ru" title="mail">normann23@mail.ru</a>
+          </li>
+          <li class="contacts__item">
+            phone:<br><a href="tel:79182773430" title="phone">+7 918 277 34 30</a>
+          </li>
+          <li class="contacts__item">
+            telegram:<br><a href="https://t.me/konstantos1" target="_blank" title="Telegram/@konstantos1">@konstantos1</a>
+          </li>
+      </ul>
       </div>
     </section>
   </main>
