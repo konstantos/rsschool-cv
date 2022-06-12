@@ -1,0 +1,1 @@
+$(".del-hash").on("click", () => setTimeout(() => history.replaceState(null, null, window.location.href.split("#")[0]), 1));
