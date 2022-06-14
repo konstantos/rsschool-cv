@@ -57,80 +57,365 @@
     }
   </style>
 
+  <script src="scripts/jquery-3.6.0.min.js"></script>
+  <script src="scripts/script.js"></script>
+
   <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/swiper-bundle.css">
   <link rel="stylesheet" href="styles/common.css">
   <link rel="stylesheet" href="styles/style.css">
-
-</head>
-  <body>
-    <header class="header">
-
-    </header>
-    <main class="main">
-      <section class="section hero">
-        <div class="container">
-          <h2 class="title title-section title__skills">I’m Konstantin Basalyuk</h2>
+</head> 
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrap">
+        <div class="header__left">
+          <div class="header__logo"><a href="#hero" class="header__logo-link">Konstantin Basaluk</a></div>
         </div>
-      </section>
-      <section class="section about">
-        <div class="container">
-          <h2 class="title title-section title__skills">About</h2>
+        <div class="header__right">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item del-hash"><a href="#hero" class="header__nav-link">Home</a></li>
+              <li class="header__nav-item del-hash"><a href="#about" class="header__nav-link">About</a></li>
+              <li class="header__nav-item del-hash"><a href="#skills" class="header__nav-link">Skills</a></li>
+              <li class="header__nav-item del-hash"><a href="#education" class="header__nav-link">Education</a></li>
+              <li class="header__nav-item del-hash"><a href="#portfolio" class="header__nav-link">Portfolio</a></li>
+              <li class="header__nav-item del-hash"><a href="#contacts" class="header__nav-link">Contacts</a></li>
+            </ul>
+          </nav>
         </div>
-      </section>
-      <section class="section skills">
-        <div class="container">
-          <h2 class="title title-section title__skills">My Skills</h2>
-        </div>
-      </section>
-      <section class="section knowledge">
-        <div class="container">
-          <h2 class="title title-section title__skills">Knowledge</h2>
-        </div>
-      </section>
-      <section class="section code">
-        <div class="container">
-          <h2 class="title title-section title__skills">Code Example</h2>
-          <pre class="code">
-            <code class="js">
-              function combine() {
-                var objR = JSON.parse(JSON.stringify(arguments[0]))
-                for (var i = 1; i < arguments.length; i++) {        
-                    for (var key in arguments[i]) {
-                        if (typeof objR[key] !== "undefined") {
-                        objR[key] = objR[key] + arguments[i][key];
-                        } else {
-                        objR[key] = arguments[i][key];
-                        }
-                    }
-                }
-                console.log('fuck, i don't know what i'm doing!!!');
-                return objR;
-              } 
-            </code>
-          </pre>
-        </div>
-      </section>
-      <section class="section portfolio">
-        <div class="container">
-          <h2 class="title title-section title__skills">My Work Experiance</h2>
-        </div>
-      </section>
-      <section class="section contacts">
-        <div class="container">
-          <h2 class="title title-section title__skills">Contacts</h2>
-        </div>
-      </section>
-      
-    
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <h2 class="title title-section title__skills">Intrested in my Work</h2>
       </div>
-    </footer>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section hero" id="hero">
+      <div class="container">
+        <div class="hero__wrap">
+          <div class="hero__left">     
+            <p class="hero__text">Welcome</p>
+            <h1 class="title title-section title__hero">I’m Konstantin Basalyuk</h1>
+            <p class="hero__subtitle">
+              <span>Web developer, </span>
+              <span>game developer</span>
+            </p>
+            <a class="btn btn-default" href="images/Basalyuk_Konstantin_CV.pdf" target="_blank">
+              <span class="btn__txt">Download CV</span>
+            </a>
+          </div>
+          <div class="hero__right">
+            <div class="image hero__img">
+              <div class="image__wrapper">
+                <picture>
+                  <!-- <source srcset=".webp" media="(max-width: 420px)" type="image/webp">
+                  <source srcset=".webp" type="image/webp">
+                  <source srcset=".jpeg" media="(max-width: 420px)"> -->
+                  <img class="image__fit image__fit_cover"
+                    src="images/img/my-gif.gif" 
+                    alt="Wow"
+                    width="566"
+                    height="800"
+                    loading="lazy">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about__wrap">
+          <div class="about__left">
+            <div class="image about__img">
+              <div class="image__wrapper">
+                <picture>
+                  <!-- <source srcset=".webp" media="(max-width: 420px)" type="image/webp"> -->
+                  <source srcset="images/img/my-photo.webp" type="image/webp">
+                  <!-- <source srcset=".jpeg" media="(max-width: 420px)"> -->
+                  <img class="image__fit image__fit_cover"
+                    src="images/img/my-photo.jpg" 
+                    alt="Wow"
+                    width="470"
+                    height="518"
+                    loading="lazy">
+                </picture>
+              </div>
+            </div>            
+          </div>
+          <div class="about__right">
+            <div class="about__top">
+              <img class="about__icon" src="images/svg/about.svg" alt="icon:)">
+              <h2 class="title title-section title__about">About</h2>
+            </div>
+            <p class="about__txt">Hi! I am 16. I am very interested in game development and web development. I want to learn JavaScript, HTML, CSSS, C#, C++. I have basic skills and experience (internship) on Unity 3D, C#</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="title title-section title__skills">My Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <div class="skills__item-wrap">
+              <svg viewBox="0 0 315 315" class="gauge-svg">
+                <circle class="gauge-base" r="135" cx="155" cy="155" stroke-width="35"></circle>
+                <circle class="gauge-arc" r="136" cx="159" cy="154" stroke-width="36"
+                  style="transform: rotate(275deg); stroke-dasharray: 400, 657;">
+                </circle> 
+              </svg>
+              <div class="skills__item-count">2.5</div>
+            </div>
+            <div class="title skills__item-title">HTML</div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__item-wrap">
+              <svg viewBox="0 0 315 315" class="gauge-svg">
+                <circle class="gauge-base" r="135" cx="155" cy="155" stroke-width="35"></circle>
+                <circle class="gauge-arc" r="136" cx="158" cy="154" stroke-width="36"
+                  style="transform: rotate(275deg); stroke-dasharray: 400, 657;">
+                </circle> 
+              </svg>
+              <div class="skills__item-count">2.5</div>
+            </div>
+            <div class="title skills__item-title">CSS</div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__item-wrap">
+              <svg viewBox="0 0 315 315" class="gauge-svg">
+                <circle class="gauge-base" r="135" cx="155" cy="155" stroke-width="35"></circle>
+                <circle class="gauge-arc" r="136" cx="159" cy="154" stroke-width="36"
+                  style="transform: rotate(275deg); stroke-dasharray: 271, 657;">
+                </circle> 
+              </svg>
+              <div class="skills__item-count">2.0</div>
+            </div>
+            <div class="title skills__item-title">JavaScript</div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__item-wrap">
+              <svg viewBox="0 0 315 315" class="gauge-svg">
+                <circle class="gauge-base" r="135" cx="155" cy="155" stroke-width="35"></circle>
+                <circle class="gauge-arc" r="136" cx="159" cy="154" stroke-width="36"
+                  style="transform: rotate(275deg); stroke-dasharray: 400, 657;">
+                </circle> 
+              </svg>
+              <div class="skills__item-count">2.5</div>
+            </div>
+            <div class="title skills__item-title">C#</div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__item-wrap">
+              <svg viewBox="0 0 315 315" class="gauge-svg">
+                <circle class="gauge-base" r="135" cx="155" cy="155" stroke-width="35"></circle>
+                <circle class="gauge-arc" r="136" cx="159" cy="154" stroke-width="36"
+                  style="transform: rotate(275deg); stroke-dasharray: 632, 657;">
+                </circle> 
+              </svg>
+              <div class="skills__item-count">4.0</div>
+            </div>
+            <div class="title skills__item-title">Unity</div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__item-wrap">
+              <svg viewBox="0 0 315 315" class="gauge-svg">
+                <circle class="gauge-base" r="135" cx="155" cy="155" stroke-width="35"></circle>
+                <circle class="gauge-arc" r="136" cx="159" cy="154" stroke-width="36"
+                  style="transform: rotate(275deg); stroke-dasharray: 472, 657;">
+                </circle> 
+              </svg>
+              <div class="skills__item-count">3.0</div>
+            </div>
+            <div class="title skills__item-title">BEM</div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__item-wrap">
+              <svg viewBox="0 0 315 315" class="gauge-svg">
+                <circle class="gauge-base" r="135" cx="155" cy="155" stroke-width="35"></circle>
+                <circle class="gauge-arc" r="136" cx="159" cy="154" stroke-width="36"
+                  style="transform: rotate(275deg); stroke-dasharray: 472, 657;">
+                </circle> 
+              </svg>
+              <div class="skills__item-count">3.0</div>
+            </div>
+            <div class="title skills__item-title">GIT</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="education__wrap">
+          <div class="education__left">
+            <h3 class="title title-h3 education__title">Language</h3>
+            <div class="education__title-line"></div>
+            <div class="skill-level">
+              <div class="title skill-level__title">Russian</div>
+              <div class="skill-level__line-rus">
+                <div class="skill-level__count">fluent</div>
+                <div class="skill-level__line"></div>
+              </div>
+            </div>
+            <div class="skill-level">
+              <div class="title skill-level__title">English</div>
+              <div class="skill-level__line-eng">
+                <div class="skill-level__count">A2</div>
+                <div class="skill-level__line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="education__right">
+            <h3 class="title title-h3 education__title">Studies</h3>
+            <div class="education__title-line"></div>
+            <div class="skill-level skill-level__stud">
+              <div class="skill-level__icon"></div>
+              <div class="skill-level__contain">
+                <div class="title skill-level__title">FOXFORD High School, Moscow</div>
+                <div class="skill-level__year">2022</div>
+              </div>
+            </div>
+            <div class="skill-level skill-level__stud">
+              <div class="skill-level__icon"></div>
+              <div class="skill-level__contain">
+                <div class="title skill-level__title">Unity 3D course Geek Brains</div>
+                <div class="skill-level__year">2019 <span><a href="https://gb.ru/certificates/659454.en" target="_blank">Sertificate</a></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section code">
+      <div class="container">
+        <h2 class="title title-section title__code">Code Example</h2>
+        <pre class="code__pre">
+          <code class="js">
+            function combine() {
+              var objR = JSON.parse(JSON.stringify(arguments[0]))
+              for (var i = 1; i &lt; arguments.length; i++) {        
+                  for (var key in arguments[i]) {
+                      if (typeof objR[key] !== "undefined") {
+                      objR[key] = objR[key] + arguments[i][key];
+                      } else {
+                      objR[key] = arguments[i][key];
+                      }
+                  }
+              }
+              console.log('fuck, i don't know what i'm doing!!!');
+              return objR;
+            } 
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="section portfolio" id="portfolio">
+      <div class="portfolio__line"></div>
+      <div class="container">        
+        <h2 class="title title-section title__portfolio">My Work Experiance</h2>
+        <div class="pane pane__wrap">
+          <div class="pane__item">
+            <div class="pane__item-wrap">
+              <a class="image pane__item-img" href="https://konstantos.ru/space/" target="_blank">
+                <div class="image__wrapper">
+                  <picture>
+                    <!-- <source srcset=".webp" media="(max-width: 420px)" type="image/webp"> -->
+                    <source srcset="images/img/project_01.webp" type="image/webp">
+                    <!-- <source srcset=".jpeg" media="(max-width: 420px)"> -->
+                    <img class="image__fit image__fit_cover"
+                      src="images/img/project_01.jpg" 
+                      alt="Wow"
+                      width="470"
+                      height="518"
+                      loading="lazy">
+                  </picture>
+                </div>
+              </a>      
+            </div>
+          </div>
+          <div class="pane__item">
+            <div class="pane__item-wrap">
+              <a class="image pane__item-img" href="https://konstantos.ru/test-nuts/" target="_blank">
+                <div class="image__wrapper">
+                  <picture>
+                    <!-- <source srcset=".webp" media="(max-width: 420px)" type="image/webp"> -->
+                    <source srcset="images/img/project_02.webp" type="image/webp">
+                    <!-- <source srcset=".jpeg" media="(max-width: 420px)"> -->
+                    <img class="image__fit image__fit_cover"
+                      src="images/img/project_02.jpg" 
+                      alt="Wow"
+                      width="470"
+                      height="518"
+                      loading="lazy">
+                  </picture>
+                </div>
+              </a>      
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__wrap">          
+          <div class="contacts__left">
+            <h2 class="title title-section title__contacts">Contacts</h2>
+            <ul class="contacts__list">          
+              <li class="contacts__item">
+                location:<br><a href="https://goo.gl/maps/LmrT5SDqd79UHidG6" target="_blank" title="location">Krasnodar, Russia</a>
+              </li>
+              <li class="contacts__item">
+                email:<br><a href="mailto:normann23@mail.ru" title="mail">normann23@mail.ru</a>
+              </li>
+              <li class="contacts__item">
+                phone:<br><a href="tel:79182773430" title="phone">+7 918 277 34 30</a>
+              </li>
+              <li class="contacts__item">
+                telegram:<br><a href="https://t.me/konstantos1" target="_blank" title="Telegram/@konstantos1">@konstantos1</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__right">
+            <div class="image contacts__img">
+              <div class="image__wrapper">
+                <picture>
+                  <!-- <source srcset=".webp" media="(max-width: 420px)" type="image/webp"> -->
+                  <source srcset="images/img/my-photo1.webp" type="image/webp">
+                  <!-- <source srcset=".jpeg" media="(max-width: 420px)"> -->
+                  <img class="image__fit image__fit_cover"
+                    src="images/img/my-photo1.jpg" 
+                    alt="Wow"
+                    width="470"
+                    height="518"
+                    loading="lazy">
+                </picture>
+              </div>
+            </div>     
+          </div>
+        </div>        
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <h2 class="title title-section title__footer">Intrested in my Work</h2>
+      <p class="footer__txt">Download my cV to know more about me</p>
+      <a class="btn btn-default footer__btn" href="images/Basalyuk_Konstantin_CV.pdf" target="_blank">
+        <span class="btn__txt">Download CV</span>
+      </a>
+      <div class="footer__wrap">
+        <a class="footer__link" href="https://github.com/konstantos" target="_blank">
+          <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="github-logo">
+            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+          </svg>
+          <div class="footer__link-txt">@konstantos</div>
+        </a>
+        <div class="footer__year">© 2022</div>
+        <a class="footer__link" href="https://rs.school/js/" target="_blank">
+          <img class="rsschool-logo" src="images/svg/rs_school_js.svg" alt="RS-School">
+        </a>
+      </div>
+    </div>
+  </footer>
 
-    
-    <script></script>
-  </body>
+  <script src="scripts/script.js"></script>
+</body>
 </html>

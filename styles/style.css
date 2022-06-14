@@ -1,11 +1,541 @@
-body {
-  color: #ffffff;
-}
+/* ----  titles  ---- */
 .title {
   font-weight: 600;
 }
+
 .title-section {
   font-size: 56px;
   line-height: 85px;
   letter-spacing: 0.05em;
 }
+
+.title-h3 {
+  font-size: 56px;
+  line-height: 85px;
+  letter-spacing: 0.05em;
+}
+/* ----  end titles  ---- */
+/* ----  header  ---- */
+.header {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #1f1f1f;
+  box-shadow: 2px 3px 12px 1px rgba(0, 0, 0, 0.5);
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.header__logo-link {
+  display: block;
+  font-family: "Alex Brush", sans-serifs;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-item {
+  margin-right: 50px;
+}
+
+.header__nav-item:last-child {
+  margin-right: 0;
+}
+
+/* ----  end header  ---- */
+/* ----  hero  ---- */
+.hero {
+  padding-top: 130px;
+}
+
+.hero__wrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.hero__left,
+.hero__right {
+  width: 50%;
+}
+
+.hero__right {
+  height: 600px;
+  padding-right: 40px;
+}
+
+.hero__img {
+  height: 100%;
+}
+
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 70px;
+}
+
+.hero__text {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 38px;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+}
+
+.title__hero {
+  font-weight: 600;
+  font-size: 67px;
+  line-height: 100px;
+}
+
+.hero__subtitle {
+  margin-bottom: 35px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+
+.hero__subtitle span {
+  white-space: nowrap;
+}
+/* ----  end hero  ---- */
+/* ----  about  ---- */
+.about__wrap {
+  display: flex;
+  margin-top: 70px;
+}
+
+.about__left,
+.about__right {
+  width: 50%;
+}
+
+.about__left {
+  height: 553px;
+  padding: 35px 38px 0;
+}
+
+.about__img {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  max-width: 470px;
+}
+
+.about__img::before {
+  position: absolute;
+  content: "";
+  z-index: 0;
+  top: -35px;
+  left: -37px;
+  width: 81.5%;
+  height: 104.6%;
+  background-color: #5a6c6c;
+}
+
+.about__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.about__top {
+  position: relative;
+}
+
+.title__about {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 94px;
+  line-height: 141px;
+  text-transform: capitalize;
+}
+
+.about__icon {
+  position: absolute;
+  z-index: 1;
+  top: -31px;
+  left: -4px;
+  width: 95px;
+  height: 128px;
+}
+
+.about__txt {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+}
+/* ----  end about  ---- */
+/* ----  skills  ---- */
+.title__skills {
+  position: relative;
+  margin: 70px 0 30px;
+}
+
+.title__skills::before {
+  position: absolute;
+  content: "";
+  top: -8px;
+  left: 0;
+  z-index: 2;
+  width: 175px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.skills__list {
+  display: flex;
+  align-items: flex-start;
+  overflow: auto;
+  cursor: grab;
+}
+.skills__list::-webkit-scrollbar {
+  background-color: transparent;
+  height: 0;
+  width: 0;
+}
+
+.skills__item {
+  margin-right: 95px;
+}
+
+.skills__item-wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.skills__item-count {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 85px;
+  letter-spacing: 0.05em;
+}
+
+.gauge-svg {
+  position: relative;
+  stroke-linecap: round;
+  width: 280px;
+  height: 280px;
+  stroke: #90d326;
+}
+
+.gauge-base {
+  opacity: 0.7;
+  fill: none;
+  transform-origin: 50% 50%;
+  stroke: #3C1DFF;
+}
+
+.gauge-arc {
+  fill: none;
+  transform-origin: 50% 50%;
+  stroke: #15B9B9;
+}
+
+.skills__item-title {
+  font-size: 20.3849px;
+  line-height: 31px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+/* ----  end skills  ---- */
+/* ----  education  ---- */
+.education__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.education__left, 
+.education__right {
+  width: 49%;
+  max-width: 478px;
+}
+
+.education__title-line {
+  height: 4px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+}
+
+.skill-level {
+  margin-bottom: 26px;
+}
+
+.skill-level__title {
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: 0.05em;
+}
+
+.skill-level__count {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  text-align: right;
+}
+
+.skill-level__line {
+  width: 100%;
+  height: 24px;
+  background: linear-gradient(90deg, #3C1DFF 18.63%, #14C9C9 78.88%);
+  border-radius: 50px;
+}
+
+.skill-level__line-rus {
+  width: 100%;
+}
+
+.skill-level__line-eng {
+  width: 35%;
+}
+
+.skill-level__stud{
+  display: flex;
+}
+
+.skill-level__icon {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #15B9B9 0%, #3C1DFF 100%);
+}
+
+.skill-level__icon::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 34px;
+  height: 34px;
+  z-index: 1;
+  background: url(../images/svg/stus.svg) center / cover no-repeat;
+}
+
+.skill-level__contain {
+  flex: 1;
+  padding-left: 22px;
+}
+
+.skill-level__stud .skill-level__title {
+  font-size: 21px;
+  line-height: 36px;
+}
+
+.skill-level__year {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  color: #e3e1e1;
+}
+/* ----  end education  ---- */
+/* ----  code  ---- */
+.code__pre {
+  padding-top: 10px;
+  border-radius: 10px;
+  background-color: #3f3f3f;
+}
+
+.title__code {
+  margin-bottom: 30px;
+}
+
+.js {
+  font-size: 21px;
+}
+/* ----  end code  ---- */
+/* ----  portfolio  ---- */
+.portfolio {
+  position: relative;
+} 
+
+.portfolio__line {
+  position: absolute;
+  z-index: 0;
+  top: 158px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #626262;
+}
+
+.title__portfolio {
+  display: inline-block;
+  padding: 0 90px 0 20px;
+  margin: 70px 0 87px -20px;
+  background-color: #1f1f1f;  
+}
+/* ----  end portfolio  ---- */
+/* ----  pane  ---- */
+.pane__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+
+.pane__item {
+  width: 50%;
+  height: 365px;
+  padding: 0 12px;
+  margin-bottom: 16px;
+}
+
+.pane__item-wrap {
+  height: 100%;
+  overflow: hidden;
+}
+
+.pane__item-img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: all 1s ease;
+}
+
+.pane__item-img:hover {
+  opacity: 1;
+}
+
+.pane__item-img img {
+  transition: all 2s ease;
+}
+
+.pane__item-img:hover img {
+  transform: scale(1.05);
+}
+/* ----  end pane  ---- */
+/* ----  contacts  ---- */
+.contacts__wrap {
+  display: flex;
+  margin-top: 70px;
+}
+
+.title__contacts {
+  margin-bottom: 40px;
+}
+
+.contacts__left {
+  flex: 1;
+}
+
+.contacts__right {
+  width: 300px;
+}
+
+.contacts__img {
+  height: 450px;
+  margin-top: -30px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.contacts__item {
+  width: 50%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.contacts__item a {
+  font-size: 30px;
+}
+/* ----  end contacts  ---- */
+
+
+
+
+
+
+
+
+
+
+
+/* ----  footer  ---- */
+.footer {
+  padding: 140px 0 30px;
+}
+
+.title__footer {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 85px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.footer__txt {
+  font-weight: 400; 
+  margin-bottom: 25px;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.footer__btn {
+  margin: 0 auto 130px;
+}
+
+.footer__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer__link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.rsschool-logo {
+  width: 127px;
+  height: 28px;
+}
+
+.github-logo {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer__link-txt {
+  padding-left: 10px;
+}
+
+.footer__year {
+  font-size: 20px;
+}
+
+/* ----  end footer  ---- */
